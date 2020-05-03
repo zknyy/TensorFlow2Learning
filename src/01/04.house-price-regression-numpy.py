@@ -17,6 +17,8 @@ y_raw = np.array([12000, 14000, 15000, 16500, 17500], dtype=np.float32)
 X = (X_raw - X_raw.min()) / (X_raw.max() - X_raw.min())
 y = (y_raw - y_raw.min()) / (y_raw.max() - y_raw.min())
 
+print(X, y)  # [0.   0.25 0.5  0.75 1.  ] [0.         0.36363637 0.54545456 0.8181818  1.        ]
+
 a, b = 0, 0
 
 num_epoch = 10000
